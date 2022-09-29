@@ -1,0 +1,26 @@
+{
+  "ext_name": {
+    "message": "Calucu: Notepad Calculator"
+  },
+  "ext_description": {
+    "message": "A free-form calculator that performs calculations as you type"
+  },
+  "new_document": {
+    "message": "New Document"
+  },
+  "error": {
+    "message": "Error"
+  },
+  "error_invalid_variable": {
+    "message": "Invalid variable name"
+  },
+  "error_duplicate_variable": {
+    "message": "Variable name in use"
+  },
+  "clipboard_failure": {
+    "message": "Failed to copy to clipboard"
+  },
+  "delete_confirm": {
+    "message": "Delete this document?"
+  }
+}

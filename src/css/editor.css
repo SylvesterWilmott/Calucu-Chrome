@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: var(--background);
+  overscroll-behavior: none;
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
+  overflow: visible;
+}
+
+.editor {
+  color: var(--primary);
+  background-color: transparent;
+  appearance: none;
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+}
+
+.output {
+  overflow: visible;
+  border-left: 1px solid var(--tertiary);
+  flex: 0 0 150px;
+}
+
+.editor,
+.output {
+  padding: 8px;
+  white-space: pre;
+  overflow-y: hidden;
+  overflow-x: auto;
+  min-height: 100vh;
+}
+
+.result-btn {
+  height: auto;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.editor,
+.output,
+.result-btn {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.result {
+  color: var(--accent-result);
+}
+
+.variable {
+  color: var(--accent-variable);
+}
+
+.error {
+  cursor: default;
+  color: var(--accent-error);
+}
+
+.result:hover,
+.variable:hover {
+  text-decoration: underline;
+}
