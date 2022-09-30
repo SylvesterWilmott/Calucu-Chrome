@@ -9,6 +9,11 @@ let listNavItems; // List of elements available for keyboard navigation
 let navIndex; // Index of currently selected element
 let docData;
 
+let defaultWindowSize = {
+  width: 550,
+  height: 420,
+};
+
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
@@ -85,7 +90,10 @@ async function onListClick(e) {
     deleteSelectedDocument();
   } else {
     let id = listNavItems[navIndex].dataset.id;
-    let data = await storage.load(id, { width: 550, height: 400 });
+    let data = await storage.load(id, {
+      width: defaultWindowSize.width,
+      height: defaultWindowSize.height,
+    });
     await win.newWindow(id, data.width, data.height);
     window.close();
   }
@@ -103,7 +111,7 @@ function onActionsClick(e) {
 
 async function createNewDocument() {
   let id = getUid();
-  await win.newWindow(id, 550, 400);
+  await win.newWindow(id, defaultWindowSize.width, defaultWindowSize.height);
   window.close();
 }
 
