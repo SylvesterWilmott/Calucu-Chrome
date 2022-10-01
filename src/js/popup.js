@@ -88,7 +88,7 @@ function loadListeners() {
 async function onListClick(e) {
   if (e.target.classList.contains("delete")) {
     deleteSelectedDocument();
-  } else {
+  } else if (e.target.classList.contains("item")) {
     let id = listNavItems[navIndex].dataset.id;
     let data = await storage.load(id, {
       width: defaultWindowSize.width,
