@@ -15,8 +15,8 @@
   --primary: #191919;
   --secondary: #7f7f7f;
   --tertiary: #dedede;
-  --accent-result: #0D8931;
-  --accent-variable: #556585;
+  --accent-result: #5000CF;
+  --accent-variable: #7f7f7f;
   --accent-error: #D12500;
 }
 
@@ -29,8 +29,8 @@
     --primary: #eaeaea;
     --secondary: #949496;
     --tertiary: #444548;
-    --accent-result: #63D584;
-    --accent-variable: #8697BA;
-    --accent-error: #EA8D79;
+    --accent-result: #B485FF;
+    --accent-variable: #949496;
+    --accent-error: #FF7557;
   }
 }
