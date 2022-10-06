@@ -173,7 +173,7 @@ function navigateDirection(e) {
       break;
   }
 
-  if (navIndex <= 1) scrollToTop();
+  if (navIndex <= 0) scrollToTop();
   if (navIndex >= listNavItems.length - 1) scrollToBottom();
 
   listNavItems[navIndex].classList.add("selected");

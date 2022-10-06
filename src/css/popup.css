@@ -13,9 +13,8 @@ body {
   overscroll-behavior: none;
 }
 
-body.loading {
-  opacity: 0;
-  overflow: hidden;
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .item.selected {
